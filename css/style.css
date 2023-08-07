@@ -1,10 +1,10 @@
-main#playground {
+#playground {
   margin: 15px auto;
   width: 45vw;
   text-align: center;
 }
 
-div.cell {
+.cell {
   width: 15vw;
   height: 15vw;
   min-height: 50px;
@@ -14,10 +14,18 @@ div.cell {
   border: 0px solid white;
   box-sizing: border-box;
   transition: border ease .1s;
+  cursor: pointer;
 }
 
-button#go {
-  display: block;
+.wait {
+  pointer-events:none;
+}
+
+.answer {
+  pointer-events: inherit;
+}
+
+#go {
   width: 15vw;
   font-size: 2em;
   height: 10vh;
@@ -27,7 +35,15 @@ button#go {
   cursor: pointer;
 }
 
-div#message {
+#message {
   text-align: center;
   font-size: 2em;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
